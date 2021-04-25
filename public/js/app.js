@@ -21,7 +21,7 @@ weatherForm.addEventListener('submit', (e) => {
             // +' || Forecast:' +final.forecast;
             // messageOne.textContent = '';
             messageOne.textContent = data.location;
-            messageTwo.textContent = 'Forecast: ' +data.forecast; 
+            messageTwo.textContent = 'Forecast: ' +data.forecast +', humidity:' +data.humidity +', visibility:' +data.visibility; 
         }
     })
 })

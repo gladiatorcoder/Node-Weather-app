@@ -99,7 +99,9 @@ app.get('/weather', (req, res) => {
             }
             res.send({
                 location: cords.location,
-                forecast: result
+                forecast: result.weather_descriptions[0],
+                humidity: result.humidity,
+                visibility: result.visibility
             })
         })
     })
