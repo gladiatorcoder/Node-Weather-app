@@ -20,8 +20,8 @@ weatherForm.addEventListener('submit', (e) => {
             // messageTwo.textContent = 'Location: '+final.location
             // +' || Forecast:' +final.forecast;
             // messageOne.textContent = '';
-            messageOne.textContent = data.location;
-            messageTwo.textContent = 'Forecast: ' +data.forecast +', humidity:' +data.humidity +', visibility:' +data.visibility; 
+            messageOne.textContent = 'Location: ' +data.location +', latitude: '+data.lat +', longitude: ' +data.lon +', local time:' +data.localTime ;
+            messageTwo.textContent = 'Forecast: ' +data.forecast +', humidity:' +data.humidity +', visibility:' +data.visibility +', Wind speed: ' +data.windSpeed +', cloud cover:' +data.cloudCover +', air pressure: ' +data.pressure; 
         }
     })
 })

@@ -99,9 +99,15 @@ app.get('/weather', (req, res) => {
             }
             res.send({
                 location: cords.location,
-                forecast: result.weather_descriptions[0],
-                humidity: result.humidity,
-                visibility: result.visibility
+                forecast: result.current.weather_descriptions[0],
+                humidity: result.current.humidity,
+                visibility: result.current.visibility,
+                windSpeed: result.current.wind_speed,
+                cloudCover: result.current.cloudcover,
+                pressure: result.current.pressure,
+                lat: result.location.lat,
+                lon: result.location.lon,
+                localTime: result.location.localtime 
             })
         })
     })
